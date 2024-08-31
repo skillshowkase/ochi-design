@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url(./assets/fonts/FoundersGrotesk-Semibold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Icomoon";
+  src: url(./assets/fonts/icomoon.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(./assets/fonts/NeueMontreal-Regular.woff2) format("woff2");
+}
+
+header {
+  transition: transform 0.5s cubic-bezier(0.3, 0.86, 0.36, 0.95);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+li:nth-child(5) {
+  margin-left: 18vw;
+}
+
+/* Link Text move up and down animation */
+li {
+  position: relative;
+}
+
+.link__default-text,
+.link__hover-text {
+  transition: transform 0.5s ease-in-out;
+}
+
+li:hover .link__default-text {
+  transform: translateY(-100%);
+}
+
+li:hover .link__hover-text {
+  transform: translateY(-100%);
+}
+
+li:not(:hover) .link__default-text {
+  transform: translateY(0);
+}
+
+li:not(:hover) .link__hover-text {
+  transform: translateY(0);
+}
+
+/* Link underline animation */
+.link--custom {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1vh;
+  overflow: hidden;
+}
+.link--custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.link--custom:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.link--custom:not(:hover)::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.nav-toggle {
+  overflow: visible;
+}
+
+.nav-toggle line {
+  transition: transform 0.35s cubic-bezier(0.3, 0.86, 0.36, 0.95);
+  transform-origin: center;
+}
+
+.open .nav-toggle line:nth-child(1) {
+  transform: rotate(45deg) translateY(-3px);
+}
+
+.open .nav-toggle line:nth-child(2) {
+  transform: rotate(-45deg) translateY(3px);
+}
