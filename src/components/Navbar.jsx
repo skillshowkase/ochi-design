@@ -55,7 +55,7 @@ const Navbar = () => {
           <Navlinks />
 
           <div
-            className="col-span-6 lg:hidden flex justify-end"
+            className="xs:col-span-6 lg:hidden flex justify-center  xxs:col-span-4"
             onClick={handleMunuBtnClick}
           >
             <div
