@@ -138,3 +138,71 @@ li:not(:hover) .link__hover-text {
     width: 9vw;
   }
 }
+
+@-webkit-keyframes crawling-line {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes crawling-line {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.animate-\[crawling-line_10s_linear_infinite\] {
+  -webkit-animation: crawling-line 10s linear infinite;
+  animation: crawling-line 10s linear infinite;
+}
+
+.marque .outline-bottom,
+.marque .outline-top {
+  position: relative;
+}
+
+.marque .outline-bottom:after,
+.marque .outline-bottom:before,
+.marque .outline-top:after,
+.marque .outline-top:before {
+  position: absolute;
+  left: -50vw;
+  right: -50vw;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.marque .outline-top:before {
+  content: "";
+  top: 19vh;
+}
+
+.marque .outline-bottom:after {
+  content: "";
+  bottom: 13vh;
+}
+
+.para2,
+.para3 {
+  position: relative;
+}
+.para2::before,
+.para3::before {
+  content: "";
+  position: absolute;
+  left: -50vw;
+  right: -50vw;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.3;
+  top: -1rem;
+}
