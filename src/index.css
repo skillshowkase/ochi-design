@@ -99,3 +99,42 @@ li:not(:hover) .link__hover-text {
 .open .nav-toggle line:nth-child(2) {
   transform: rotate(-45deg) translateY(3px);
 }
+
+.start-project-btn {
+  transition: background-color 1s linear;
+}
+
+.start-project-btn:hover .btn__text {
+  background-color: #000;
+  color: #fff;
+}
+
+.start-project-btn:hover i {
+  background-color: #000;
+  color: #fff;
+}
+
+#image-div {
+  background-image: url(./assets/images/content-image01.webp);
+  width: 0;
+  height: 6vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1.2vw;
+  animation-name: wide;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  border-radius: 8%;
+  margin: 1vw 1vw 0 0;
+}
+
+@keyframes wide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 9vw;
+  }
+}
