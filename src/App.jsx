@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Banner from "./components/Banner";
+import Cartoon from "./components/Cartoon";
 import Marque from "./components/Marque";
 import Navbar from "./components/Navbar";
 
@@ -10,6 +11,7 @@ const App = () => {
       <Banner />
       <Marque />
       <About />
+      <Cartoon />
     </div>
   );
 };

@@ -206,3 +206,10 @@ li:not(:hover) .link__hover-text {
   opacity: 0.3;
   top: -1rem;
 }
+
+.cartoon-container {
+  background-image: url(./assets/images/Top-Viewbbcbv-1-scaled.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

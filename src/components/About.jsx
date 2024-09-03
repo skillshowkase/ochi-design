@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="h-full w-full bg-[#CDEA67] font-nm">
-      <div className="section__holder pt-40 pb-5 md:pt-75 md:pb-35">
+      <div className="section__holder pt-40 pb-12 md:pt-75 md:pb-35">
         <div className="container px-14">
           <div className="mb-60">
             <div className="max-w-1100 reset-last">
