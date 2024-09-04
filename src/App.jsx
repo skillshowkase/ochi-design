@@ -6,6 +6,7 @@ import Marque from "./components/Marque";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import ReadyToStart from "./components/ReadyToStart";
+import Reviews from "./components/Reviews";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Cartoon />
       <Projects />
+      <Reviews />
       <ReadyToStart />
       <Footer />
     </div>
