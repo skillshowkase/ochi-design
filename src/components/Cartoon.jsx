@@ -4,7 +4,7 @@ const Cartoon = () => {
       <div id="img-div " className="flex justify-center items-center relative">
         <div
           id="eyes"
-          className="w-[35rem] flex gap-8 justify-center items-center absolute top-[20rem]"
+          className="w-[30rem] flex gap-8 justify-center items-center absolute top-[20rem]"
         >
           <svg
             className="w-full h-auto overflow-visible flex-grow"
